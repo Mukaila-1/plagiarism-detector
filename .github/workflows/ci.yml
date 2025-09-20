@@ -20,3 +20,20 @@ git push
 
       - name: Run end-to-end tests
         run: npm run test:e2e # 5. Executes another Node.js-based test script
+git add .
+git commit -m "feat: Initialize Sentop AI Plagiarism Detector application" -m "
+This commit establishes the initial, feature-complete, and production-ready version of the Sentop AI Plagiarism Detector & Paraphraser.
+
+The application is built with a modern tech stack and includes a comprehensive suite of automated tests to ensure stability and reliability.
+
+### Key Features Implemented:
+- Dual-Mode Plagiarism Analysis (Web Search & Direct Comparison)
+- AI-Powered Paraphrasing
+- Detailed Reporting with Similarity Score and Sources
+
+### Technical Architecture:
+- Frontend: React, TypeScript, Vite, Tailwind CSS
+- Backend: Serverless function for secure API communication
+- Testing: Vitest for components, Playwright for E2E tests
+"
+git push
