@@ -1,0 +1,21 @@
+# ... (YAML configuration for GitHub Actions)
+jobs:
+  test:
+    runs-on: ubuntu-latest # 1. The orchestrator prepares a machine
+    steps:
+      - uses: actions/checkout@v4 # Checks out code
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4 # 2. Installs Node.js
+        with:
+          node-version: 20
+
+      # From here on, we are using Node.js tools
+      - name: Install dependencies
+        run: npm install # 3. Uses npm (a Node.js tool)
+
+      - name: Run component tests
+        run: npm test # 4. Executes the test script defined in package.json
+
+      - name: Run end-to-end tests
+        run: npm run test:e2e # 5. Executes another Node.js-based test script
