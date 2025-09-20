@@ -13,7 +13,8 @@ jobs:
       # From here on, we are using Node.js tools
       - name: Install dependencies
         run: npm install # 3. Uses npm (a Node.js tool)
-
+git commit -m "fix(tsconfig): unify config to include all project files"
+git push
       - name: Run component tests
         run: npm test # 4. Executes the test script defined in package.json
 
